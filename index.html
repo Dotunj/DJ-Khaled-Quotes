@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DJ Khaled</title>
+    <title>DJ Khaled Quotes</title>
     <link rel="stylesheet" href="assets/css/foundation.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Quicksand:300,700" rel="stylesheet">
@@ -22,14 +22,17 @@
 		<div class="row" id="form">
 			<div class="medium-6 columns">
 				<form>
-					<div class="row" id="checkbox">
-					<input type="radio" name="Color" value="Colorize" id="color" required><label for="color">Colorize</label>
-				</div>
                   <label>How many tablets do you want today?
-                  <input type="number" placeholder="Quantity"> 
+                  <input type="number" name="quantity" id="quantity" placeholder="Quantity" required> 
                   </label>
-                  <input type="submit" class="success button" value="Generate" required>
-            
+              <input class="button" type="button" id="button" onclick="genKhaled('spot'); show('spot')" value="Generate">
 	</form>
+	<div class="row">
+     <div id="spot" class="large-12 columns"></div>
+    </div>
+<script src="assets/js/vendor/jquery.js"></script>
+ <script src="assets/js/vendor/what-input.js"></script>
+ <script src="assets/js/vendor/foundation.js"></script>
+ <script src="assets/js/app.js"></script>
 </body>
 </html>
